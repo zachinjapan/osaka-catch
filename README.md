@@ -8,7 +8,7 @@
 
 4. run "npm start"
 
-* for automated testing run "npm test" in the base directory (I didn't know how to do testing before this project. I hit a bug with importing the routes and was unable to run the server endpoints using Jest unfortunately
+* for automated testing run "npm test" in the base directory
 
 * for testing the API endpoints, use this postman workspace while the app is running
 
