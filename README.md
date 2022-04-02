@@ -4,7 +4,7 @@
 
 1. clone repo
 
-2. run "npm install-dependencies" in the base directory
+2. run "npm run install-dependencies" in the base directory
 
 4. run "npm start"
 
