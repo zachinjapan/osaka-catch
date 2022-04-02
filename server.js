@@ -37,6 +37,12 @@ app.get("/users", (req, res) => {
 app.get("/users/:id/rewards?", (req, res) => {
   const { id } = req.params;
   const { at } = req.query;
+
+  // thow an error if the user id is not a nubmer and the at date is not a valid date
+  if (!parseInt(id) || new Date(at) == "Invalid Date") {
+    res.send("Invalid user id or date");
+    throw new Error("Invalid user id or date");
+  }
   // gets an array of dates going back to Sunday and forward to Saturday
   const days = getFullWeekStartingOnSunday(at);
   let user = users[id];

@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "test": "cd client && npm run test",
     "install-server": "npm install",
     "install-dependencies": " npm run install-client && npm run install-server ",
     "build-client": "cd client && npm run build",
