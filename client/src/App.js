@@ -1,11 +1,7 @@
 import "./Assets/App.css";
 import React, { useState } from "react";
 // api calls
-import {
-  getUsersFromServer,
-  createUser,
-  redeemReward,
-} from "./Utils/clientAPIs";
+import { getUsersFromServer, createUser, redeemReward } from "./clientRoutes";
 // helper function to get days
 import { daysOfTheWeek } from "./Utils/daysOfTheWeek";
 
