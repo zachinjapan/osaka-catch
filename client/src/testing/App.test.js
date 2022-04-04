@@ -1,6 +1,6 @@
 import { daysOfTheWeek } from "../Utils/daysOfTheWeek";
 import { getFullWeekStartingFromSunday } from "../Utils/getFullWeekStartingFromSunday.js";
-import { getUsersFromServer } from "../Utils/clientAPIs";
+import { getUsersFromServer } from "../clientRoutes";
 import { fakeCreateUser } from "./fakeAPIRoutes";
 
 ///////////////////////////////////////////////////////////////////////////////
