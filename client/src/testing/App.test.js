@@ -1,5 +1,5 @@
 import { daysOfTheWeek } from "../Utils/daysOfTheWeek";
-import { getFullWeekStartingOnSunday } from "../../../helperFunctions";
+import { getFullWeekStartingFromSunday } from "../Utils/getFullWeekStartingFromSunday.js";
 import { getUsersFromServer } from "../Utils/clientAPIs";
 import { fakeCreateUser } from "./fakeAPIRoutes";
 
@@ -22,7 +22,7 @@ test("given an iso date that is a Sunday the returned array is a full week start
     "2022-04-08T00:00:00.000Z",
     "2022-04-09T00:00:00.000Z",
   ];
-  expect(getFullWeekStartingOnSunday(isoDate)).toEqual(expected);
+  expect(getFullWeekStartingFromSunday(isoDate)).toEqual(expected);
 });
 
 test("given an iso date that is not a Sunday the function returns an array starting on the Sunday of that week", () => {
@@ -37,7 +37,7 @@ test("given an iso date that is not a Sunday the function returns an array start
     "2022-04-08T00:00:00.000Z",
     "2022-04-09T00:00:00.000Z",
   ];
-  expect(getFullWeekStartingOnSunday(isoDate)).toEqual(expected);
+  expect(getFullWeekStartingFromSunday(isoDate)).toEqual(expected);
 });
 
 ///////////////////////////////////////////////////////////////////////////////

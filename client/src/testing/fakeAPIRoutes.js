@@ -1,10 +1,10 @@
-import { getFullWeekStartingOnSunday } from "../../../helperFunctions";
+import { getFullWeekStartingFromSunday } from "../Utils/getFullWeekStartingFromSunday";
 
 let users = {};
 
 const fakeCreateUser = (id, at) => {
   // gets an array of dates going back to Sunday and forward to Saturday
-  const days = getFullWeekStartingOnSunday(at);
+  const days = getFullWeekStartingFromSunday(at);
   let user = users[id];
   // if there is no user just make one
   if (!user) {
