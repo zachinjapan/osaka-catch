@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Users and rewards",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "cd client && npm run test",
     "install-server": "npm install",

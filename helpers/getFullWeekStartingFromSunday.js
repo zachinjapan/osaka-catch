@@ -1,4 +1,4 @@
-const getFullWeekStartingOnSunday = (date) => {
+const getFullWeekStartingFromSunday = (date) => {
   let days = [];
   let currentDate = new Date(date);
   let currentDay = currentDate.getDay();
@@ -34,4 +34,5 @@ const getFullWeekStartingOnSunday = (date) => {
   return days;
 };
 
-export { getFullWeekStartingOnSunday };
+// export as module
+module.exports = getFullWeekStartingFromSunday;
