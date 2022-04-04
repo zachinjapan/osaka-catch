@@ -4,7 +4,7 @@ const router = express.Router();
 
 //helper functions
 // import getFullWeekStartingFromSUnday
-const getFullWeekStartingFromSunday = require("../helpers/getFullWeekStartingFromSunday");
+const getFullWeekStartingFromSunday = require("../utils/getFullWeekStartingFromSunday");
 
 let users = {};
 
